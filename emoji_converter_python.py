@@ -5,7 +5,7 @@ def emoji_converter(message):
 #create an emoji dictionery use windows logo key + dot(.) to add emojis
     emojis = {
         ":)" : "😄" ,
-        "(:" : " 😥"
+        ":(" : "😥"
         }
     output =''
     for word in words:
