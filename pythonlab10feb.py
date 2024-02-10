@@ -1,7 +1,7 @@
 
 #write a function to find factorial of a number
 
-'''def factorial(a):
+def factorial(a):
     if(a==0 or a==1):
         print(1)
     else:
@@ -43,9 +43,9 @@ def primeeven(num):
     
 
 num=int(input("enter the number"))
-primeeven(num)'''
+primeeven(num)
 
-#lambda() function -used to define an anonymous function in python,used for single line functions
+#recursion
 def recur_fibo(n):
   if n<=1:
      return n
@@ -60,11 +60,12 @@ def recur_fibo(n):
       print(recur_fibo(i))
 
 
-#wap for 
-      
-        
-
-    
-
-
-#recursion
+#wap for to find sum of a list using recursion
+def func(numbers):
+    if not numbers:
+        return 0
+    else:
+       return numbers[0] + func(numbers[1:])
+elements = [1, 2, 3, 4, 5]
+total_sum = func(elements)
+print(f"The sum of elements in the list is: {total_sum}")
